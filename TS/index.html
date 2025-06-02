@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>方块唐山 - Minecraft还原计划</title>
+    <link rel="icon" href="images/logo.png" type="images/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: #5B7C3C;
+            color: #fff;
+        }
+
+        .navbar {
+            background: #2D2D2D;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+
+        .navbar a {
+            color: #7CFC00;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-size: 1.2rem;
+        }
+
+        .banner {
+            height: 80vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('minecraft-banner.jpg');
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .banner h1 {
+            font-size: 4rem;
+            text-shadow: 3px 3px #000;
+            color: #FFD700;
+        }
+
+        .section {
+            padding: 4rem 10%;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .mc-card {
+            background: #4A4A4A;
+            border: 3px solid #3B3B3B;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        .mc-card img {
+            width: 100%;
+            border: 2px solid #666;
+        }
+
+        .pixel-font {
+            font-family: 'Minecraft', sans-serif;
+        }
+
+        .btn-mc {
+            background: #3B8526;
+            color: white;
+            padding: 0.8rem 2rem;
+            border: 2px solid #2D661D;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-mc:hover {
+            background: #4CAF50;
+        }
+
+        footer {
+            background: #2D2D2D;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .banner h1 {
+                font-size: 2.5rem;
+            }
+            .navbar a {
+                display: block;
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#home">首页</a>
+        <a href="#about">关于计划</a>
+        <a href="#gallery">建筑展示</a>
+        <a href="#join">加入我们</a>
+        <a href="#more">更多还原</a>
+        <a href="https://angharish.github.io/en/TS">EN</a>
+    </nav>
+    
+
+    <section class="banner">
+        <h1 class="pixel-font">方块唐山</h1>
+        <p>用Minecraft重现凤凰城的辉煌</p>
+        
+    </section>
+
+    <section id="about" class="section">
+        <h2>项目介绍</h2>
+        <div class="grid-container">
+            <div class="mc-card">
+                <h3>历史传承</h3>
+                <p>还原唐山大地震纪念碑、启新1889文化创意产业园等地标建筑</p>
+            </div>
+            <div class="mc-card">
+                <h3>现代风貌</h3>
+                <p>包含南湖生态园、唐山新体育中心等现代城市景观</p>
+            </div>
+            <div class="mc-card">
+                <h3>工业记忆</h3>
+                <p>重现开滦煤矿、唐胥铁路等工业历史遗迹</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section">
+        <h2>建筑展示</h2>
+        <div class="grid-container">
+            <div class="mc-card">
+                <img src="landmark1.jpg" alt="地震纪念碑">
+                <p>抗震纪念碑还原</p>
+            </div>
+            <div class="mc-card">
+                <img src="landmark2.jpg" alt="南湖公园">
+                <p>南湖生态园景观</p>
+            </div>
+            <div class="mc-card">
+                <img src="landmark3.jpg" alt="工业遗迹">
+                <p>开滦煤矿工业区</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="join" class="section">
+        <h2>参与方式</h2>
+        <div class="mc-card" style="text-align: center;">
+            <p>服务器IP：mc.tangshan.cn</p>
+            <p>QQ群：123456789</p>
+            
+           
+        </div>
+    </section>
+    <section id="more" class="section">
+        <h2>更多还原</h2>
+        <div class="mc-card" style="text-align: center;">
+            
+            <a href="Fengnan/" class="btn-mc pixel-font" >丰南区还原</a>
+            <a href="Fengrun/" class="btn-mc pixel-font" >丰润区还原</a>
+            <a href="Lunan/" class="btn-mc pixel-font" >路南区还原</a>
+            <a href="Lubei/" class="btn-mc pixel-font" >路北区还原</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 AngHarish-studio 版权所有。</p>
+        <div style="margin-top: 1rem;">
+            <a href="#"><img src="images/ixia.png" alt="ixigua.com" style="height: 30px;"></a>
+            <a href="https://space.bilibili.com/3493280356502177?spm_id_from=333.788.0.0"><img src="images/bili.png" alt="Bilibili.com" style="height: 30px;"></a>
+        <p>冀ICP备案号:1145141919810</p>
+        </div>
+    </footer>
+</body>
+</html>
