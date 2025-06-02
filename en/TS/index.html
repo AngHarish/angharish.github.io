@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Tangshan - Minecraft</title>
+    <link rel="icon" href="images/logo.png" type="images/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: #5B7C3C;
+            color: #fff;
+        }
+
+        .navbar {
+            background: #2D2D2D;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+
+        .navbar a {
+            color: #7CFC00;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-size: 1.2rem;
+        }
+
+        .banner {
+            height: 80vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('minecraft-banner.jpg');
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .banner h1 {
+            font-size: 4rem;
+            text-shadow: 3px 3px #000;
+            color: #FFD700;
+        }
+
+        .section {
+            padding: 4rem 10%;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .mc-card {
+            background: #4A4A4A;
+            border: 3px solid #3B3B3B;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        .mc-card img {
+            width: 100%;
+            border: 2px solid #666;
+        }
+
+        .pixel-font {
+            font-family: 'Minecraft', sans-serif;
+        }
+
+        .btn-mc {
+            background: #3B8526;
+            color: white;
+            padding: 0.8rem 2rem;
+            border: 2px solid #2D661D;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-mc:hover {
+            background: #4CAF50;
+        }
+
+        footer {
+            background: #2D2D2D;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .banner h1 {
+                font-size: 2.5rem;
+            }
+            .navbar a {
+                display: block;
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">Project Introduction</a>
+        <a href="#gallery">Architectural display</a>
+        <a href="#join">Join us</a>
+        <a href="#more">More restorations</a>
+        <a href="127.0.0.1:5500/TS">中文版（简体）</a>
+    </nav>
+
+    <section class="banner">
+        <h1 class="pixel-font">Block of Tangshan</h1>
+        <p>Recreate the glory of Phoenix with Minecraft</p>
+        
+    </section>
+
+    <section id="about" class="section">
+        <h2>Project Introduction</h2>
+        <div class="grid-container">
+            <div class="mc-card">
+                <h3>Heritage</h3>
+                <p>Restore landmark buildings such as the Tangshan Earthquake Monument and the Qixin 1889 Cultural and Creative Industry Park</p>
+            </div>
+            <div class="mc-card">
+                <h3>Modern</h3>
+                <p>It includes modern urban landscapes such as Nanhu Ecological Park and Tangshan New Sports Center</p>
+            </div>
+            <div class="mc-card">
+                <h3>Industrial memory</h3>
+                <p>Recreate industrial historical sites such as Kailuan Coal Mine and Tangxu Railway</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section">
+        <h2>Architectural display</h2>
+        <div class="grid-container">
+            <div class="mc-card">
+                <img src="landmark1.jpg" alt="地震纪念碑">
+                <p>Restoration of earthquake-resistant monuments</p>
+            </div>
+            <div class="mc-card">
+                <img src="landmark2.jpg" alt="南湖公园">
+                <p>Landscape of Nanhu Ecological Park</p>
+            </div>
+            <div class="mc-card">
+                <img src="landmark3.jpg" alt="工业遗迹">
+                <p>Kailuan Coal Mine Industrial Zone</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="join" class="section">
+        <h2>Join us</h2>
+        <div class="mc-card" style="text-align: center;">
+            <p>ServerIP：mc.tangshan.cn</p>
+            <p>QQ group：123456789</p>
+            
+           
+        </div>
+    </section>
+    <section id="more" class="section">
+        <h2>More restorations</h2>
+        <div class="mc-card" style="text-align: center;">
+            
+            <a href="https://angharish.github.io/en/TS/Fengnan/" class="btn-mc pixel-font" >Fengnan District is restored</a>
+            <a href="https://angharish.github.io/en/TS/Fengrun/" class="btn-mc pixel-font" >Fengrun District is restored</a>
+            <a href="https://angharish.github.io/en/TS/Lunan/" class="btn-mc pixel-font" >Lunan District is restored</a>
+            <a href="https://angharish.github.io/en/TS/Lubei/" class="btn-mc pixel-font" >Lubei District is restored</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 AngHarish-studio 版权所有。</p>
+        <div style="margin-top: 1rem;">
+            <a href="#"><img src="images/ixia.png" alt="ixigua.com" style="height: 30px;"></a>
+            <a href="https://space.bilibili.com/3493280356502177?spm_id_from=333.788.0.0"><img src="images/bili.png" alt="Bilibili.com" style="height: 30px;"></a>
+        <p>冀ICP备案号:1145141919810</p>
+        </div>
+    </footer>
+</body>
+</html>
